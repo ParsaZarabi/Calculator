@@ -1,39 +1,40 @@
-* {
-    box-sizing: border-box;
-}
+*{
 
-body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #555;
-    background-color: #f6f6f6;
-}
+   box-sizing: border-box;
+   font-size: 30px;
 
-.main-div  {
-    width: 450px;
-    height: 675px;
-    background-color: #ecf0f3;
-    padding: 60px 35px 35px 35px;
-    border-radius: 40px;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+body{
+   margin-top: 45px;
+   height: 90vh;
+   width: 90vw;
+   font-weight: 700;
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #555;
+   background-color: #f6f6f6;
+}
+.calc{
+   width: 500px;
+   height: 780px;
+   background-color: #ecf0f3;
+   padding: 60px 35px 35px 35px;
+   border-radius: 40px;
+   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
 }
 
 .title{
-    text-align: center;
-    font-size: 28px;
-    padding-bottom: 25px;
+   text-align: center;
+   font-size: 28px;
+   padding-bottom: 25px;
 }
 
-.input-div input {
-    border: none;
+.display{
+   border: none;
     background: none;
-    width: 378px;
+    width: 430px;
     font-size: 30px;
     padding: 20px 10px 20px 5px;
     outline: none;
@@ -41,54 +42,86 @@ body {
     box-shadow: 5px 5px 25px #b1b1b1, -5px -5px 25px #ffffff, inset -7px -7px 25px #ffffff, inset 7px 7px 25px #b1b1b1;
     border-radius: 25px;
 }
+.keypad{
 
-.first-buttons {
-    border: none;
+}
+.keypad-table{
+
+}
+.keypad-table tr:first-child .key{
+   border: none;
     cursor: pointer;
-    width: 24%;
-    height: 65px;
+    width: 90px;
+    height: 90px;
     background-color: #f6f6f6;
-    border-radius: 20px;
+    border-radius:90px;
     font-size: 20px;
     font-weight: 700;
+    text-align:center;
     color: #555;
     box-shadow: 3px 3px 8px #b1b1b1 , 
     -3px -3px 5px #fff;
     transition: all .3s ease-in;
 }
-
-.seccond-buttons {
-    border: none;
+.keypad-table tr:first-child .key:active{
+   border: none;
     cursor: pointer;
-    margin-top: 15px;
-    width: 24%;
-    height: 65px;
+    width: 90px;
+    height: 90px;
     background-color: #f6f6f6;
-    border-radius: 20px ;
+    border-radius:90px;
     font-size: 20px;
     font-weight: 700;
+    text-align:center;
     color: #555;
     box-shadow: 3px 3px 8px #b1b1b1 , 
     -3px -3px 5px #fff;
     transition: all .3s ease-in;
 }
-
-.third-button{
-    border: none;
+.keypad-table tr td:last-child .key{
+   border: none;
     cursor: pointer;
-    width: 378px;
-    height: 60px;
-    margin-top: 15px;
+    width: 90px;
+    height: 90px;
     background-color: #f6f6f6;
-    border-radius: 20px;
+    border-radius:90px;
     font-size: 20px;
     font-weight: 700;
+    text-align:center;
     color: #555;
     box-shadow: 3px 3px 8px #b1b1b1 , 
-    -3px -3px 8px #fff;
+    -3px -3px 5px #fff;
     transition: all .3s ease-in;
 }
-
-.buttons button:hover{
-    background-color:#50e5e5;
+.keypad-table tr td:last-child .key:active{
+   border: none;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: #f6f6f6;
+    border-radius:90px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align:center;
+    color: #555;
+    box-shadow: 3px 3px 8px #b1b1b1 , 
+    -3px -3px 5px #fff;
+    transition: all .3s ease-in;
+}
+.key{
+   width: 90px;
+   height: 90px;
+   box-shadow: 3px 3px 8px #b1b1b1 , 
+    -3px -3px 5px #fff;
+   text-align: center;
+   line-height: 90px;
+   border-radius: 90px;
+   margin: 5px;
+   background-color: #f6f6f6;
+   color: #555;
+   cursor: pointer;
+   user-select: none;
+}
+.key:active{
+   background-color: #33333390;
 }
